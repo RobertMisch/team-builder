@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Form(props){
+    let count=3
     return(
         <form onSubmit={props.onFormSubmit}>
             <label>name <input
@@ -17,7 +18,7 @@ function Form(props){
             /></label>
             <label>role <input
                 onChange={props.onInputChange} // callback takes an event object
-                value={props.formData.fname}
+                value={props.formData.role}
                 name='role'
                 type='text'
             /></label>
